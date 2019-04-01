@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{59847FAA-D017-45CA-B60E-AA289ED0D7E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Squidley</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)\Tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\MiddleWare\Qt\include;$(SolutionDir)..\MiddleWare\glew\include;$(SolutionDir)..\MiddleWare\glm</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Middleware\Qt\lib;$(SolutionDir)..\Middleware\glew\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32d.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ObjConverter\ConfigReader.cpp" />
+    <ClCompile Include="BehaviorComponents\ArrivalBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\AStarComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\EvadeBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\FleeBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\FlockingBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\InterposeBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\PursuitBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\SeekBehaviorComponent.cpp" />
+    <ClCompile Include="BehaviorComponents\SteeringBehaviors.cpp" />
+    <ClCompile Include="BehaviorComponents\WanderBehaviorComponent.cpp" />
+    <ClCompile Include="DebugSlider.cpp" />
+    <ClCompile Include="DebugSlider_moc.cpp" />
+    <ClCompile Include="ECS\Component.cpp" />
+    <ClCompile Include="ECS\Components\BoundingBoxComponent.cpp" />
+    <ClCompile Include="ECS\Components\CameraComponent.cpp" />
+    <ClCompile Include="ECS\Components\GravityComponent.cpp" />
+    <ClCompile Include="ECS\Components\KeyboardComponent.cpp" />
+    <ClCompile Include="ECS\Components\MouseComponent.cpp" />
+    <ClCompile Include="ECS\Components\MovementComponent.cpp" />
+    <ClCompile Include="ECS\Components\PhaserComponent.cpp" />
+    <ClCompile Include="ECS\Components\RenderableComponent.cpp" />
+    <ClCompile Include="ECS\Components\SpatialComponent.cpp" />
+    <ClCompile Include="ECS\Entities\FlagEntity.cpp" />
+    <ClCompile Include="ECS\Entities\BluePlayerEntity.cpp" />
+    <ClCompile Include="ECS\Entities\BlueWaypointEntity.cpp" />
+    <ClCompile Include="ECS\Entities\FlockEntity.cpp" />
+    <ClCompile Include="ECS\Entities\InterposeEntity.cpp" />
+    <ClCompile Include="ECS\Entities\PathEntity.cpp" />
+    <ClCompile Include="ECS\Entities\PlayerEntity.cpp" />
+    <ClCompile Include="ECS\Entities\RedPlayerEntity.cpp" />
+    <ClCompile Include="ECS\Entities\RedWaypointEntity.cpp" />
+    <ClCompile Include="ECS\Entities\SeekEntity.cpp" />
+    <ClCompile Include="ECS\Entity.cpp" />
+    <ClCompile Include="ECS\EntityManager.cpp" />
+    <ClCompile Include="FragmentShaderInfo.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="List.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="MyGlWindow.cpp" />
+    <ClCompile Include="MyGlWindow_moc.cpp" />
+    <ClCompile Include="MyWidget.cpp" />
+    <ClCompile Include="MyWidget_moc.cpp" />
+    <ClCompile Include="ListNode.cpp" />
+    <ClCompile Include="Nodes\NodeMap.cpp" />
+    <ClCompile Include="PathFinding.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="Renderable.cpp" />
+    <ClCompile Include="RenderEngine\BufferInfo.cpp" />
+    <ClCompile Include="RenderEngine\BufferManager.cpp" />
+    <ClCompile Include="RenderEngine\RenderEngine.cpp" />
+    <ClCompile Include="ShapeGenerator.cpp" />
+    <ClCompile Include="TextureInfo.cpp" />
+    <ClCompile Include="TransformInfo.cpp" />
+    <ClCompile Include="VertexShaderInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ObjConverter\ConfigReader.h" />
+    <ClInclude Include="Assert.h" />
+    <ClInclude Include="AStarPath.h" />
+    <ClInclude Include="BehaviorComponents\ArrivalBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\AStarComponent.h" />
+    <ClInclude Include="BehaviorComponents\EvadeBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\FleeBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\FlockingBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\InterposeBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\PursuitBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\SeekBehaviorComponent.h" />
+    <ClInclude Include="BehaviorComponents\SteeringBehaviors.h" />
+    <ClInclude Include="BehaviorComponents\WanderBehaviorComponent.h" />
+    <ClInclude Include="DebugSlider.h" />
+    <ClInclude Include="ECS\Component.h" />
+    <ClInclude Include="ECS\Components\BoundingBoxComponent.h" />
+    <ClInclude Include="ECS\Components\CameraComponent.h" />
+    <ClInclude Include="ECS\Components\GravityComponent.h" />
+    <ClInclude Include="ECS\Components\KeyboardComponent.h" />
+    <ClInclude Include="ECS\Components\MouseComponent.h" />
+    <ClInclude Include="ECS\Components\MovementComponent.h" />
+    <ClInclude Include="ECS\Components\PhaserComponent.h" />
+    <ClInclude Include="ECS\Components\RenderableComponent.h" />
+    <ClInclude Include="ECS\Components\SpatialComponent.h" />
+    <ClInclude Include="ECS\Entities\FlagEntity.h" />
+    <ClInclude Include="ECS\Entities\BluePlayerEntity.h" />
+    <ClInclude Include="ECS\Entities\BlueWaypointEntity.h" />
+    <ClInclude Include="ECS\Entities\FlockEntity.h" />
+    <ClInclude Include="ECS\Entities\InterposeEntity.h" />
+    <ClInclude Include="ECS\Entities\PathEntity.h" />
+    <ClInclude Include="ECS\Entities\PlayerEntity.h" />
+    <ClInclude Include="ECS\Entities\RedPlayerEntity.h" />
+    <ClInclude Include="ECS\Entities\RedWaypointEntity.h" />
+    <ClInclude Include="ECS\Entities\SeekEntity.h" />
+    <ClInclude Include="ECS\Entity.h" />
+    <ClInclude Include="ECS\EntityManager.h" />
+    <ClInclude Include="FragmentShaderInfo.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MyGame.h" />
+    <ClInclude Include="MyGlWindow.h" />
+    <ClInclude Include="MyModel.h" />
+    <ClInclude Include="MyWidget.h" />
+    <ClInclude Include="ListNode.h" />
+    <ClInclude Include="Nodes\NodeMap.h" />
+    <ClInclude Include="Nodes\Nodes.h" />
+    <ClInclude Include="PathFinding.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="Renderable.h" />
+    <ClInclude Include="RenderEngine\BufferInfo.h" />
+    <ClInclude Include="RenderEngine\BufferManager.h" />
+    <ClInclude Include="RenderEngine\RenderEngine.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ShapeData.h" />
+    <ClInclude Include="ShapeGenerator.h" />
+    <ClInclude Include="StateMachines\State.h" />
+    <ClInclude Include="StateMachines\StateMachine.h" />
+    <ClInclude Include="TextureInfo.h" />
+    <ClInclude Include="TransformInfo.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VertexFormats.h" />
+    <ClInclude Include="VertexShaderInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\Shaders\DepthFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\DepthGeometryShader.glsl" />
+    <None Include="..\Data\Shaders\DepthVertexShader.glsl" />
+    <None Include="..\Data\Shaders\ExplodeFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\ExplodeGeometryShader.glsl" />
+    <None Include="..\Data\Shaders\ExplodeVertexShader.glsl" />
+    <None Include="..\Data\Shaders\FragmentShaderPassThru.glsl" />
+    <None Include="..\Data\Shaders\PCFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\PCNFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\PCNVertexShader.glsl" />
+    <None Include="..\Data\Shaders\PCTFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\PCTVertexShader.glsl" />
+    <None Include="..\Data\Shaders\PCVertexShader.glsl" />
+    <None Include="..\Data\Shaders\PTAlphaFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\PTAlphaVertexShader.glsl" />
+    <None Include="..\Data\Shaders\PTFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\PTVertexShader.glsl" />
+    <None Include="..\Data\Shaders\ShadowMappingFragment.glsl" />
+    <None Include="..\Data\Shaders\ShadowMappingVertex.glsl" />
+    <None Include="..\Data\Shaders\VertexShaderPassThru.glsl" />
+    <None Include="..\Data\Shaders\WaterFragmentShader.glsl" />
+    <None Include="..\Data\Shaders\WaterVertexShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Squidley.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

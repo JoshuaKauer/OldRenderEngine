@@ -1,0 +1,44 @@
+SceneOutputFormat 9
+
+AIWorldInput 		..\..\Static_Data\OBJs\AIWorld.obj
+AIWorldOutput 		..\..\Static_Data\Scenes\AIWorld.ptn.scene
+CloneInput			..\..\Static_Data\OBJs\Clonetrooper.obj
+CloneOutput			..\..\Static_Data\Scenes\Clonetrooper.pn.scene
+CubeInput 			..\..\Static_Data\OBJs\Cube.obj
+CubeOutput 			..\..\Static_Data\Scenes\Cube.p.scene
+DanielsSceneInput 	..\..\Static_Data\OBJs\DanielsScene.obj
+DanielsSceneOutput 	..\..\Static_Data\Scenes\DanielsScene.scene
+DargonInput 		..\..\Static_Data\OBJs\Dargon.obj
+DargonOutput 		..\..\Static_Data\Scenes\Dargon.pc.scene
+FalconInput			..\Data\OBJs\Millennium_Falcon.obj
+FalconOutput		..\Data\Scenes\Millennium_Falcon.scene
+FlagInput			..\Data\OBJs\Flag.obj
+FlagOutput			..\Data\Scenes\FlagRed.scene
+PyramidInput 		..\..\Static_Data\OBJs\Pyramid.obj
+PyramidOutput 		..\..\Static_Data\Scenes\Pyramid.pc.scene
+ScorchInput 		..\..\Static_Data\OBJs\Scorch.obj
+ScorchOutput 		..\..\Static_Data\Scenes\Scorch.scene
+SpecialCubeInput 	..\Data\OBJs\SpecialCube.obj
+SpecialCubeOutput 	..\Data\Scenes\SpecialCube.scene
+SphereInput 		..\..\Static_Data\OBJs\Sphere3.obj
+SphereOutput 		..\..\Static_Data\Scenes\Sphere3.scene
+StormInput			..\Data\OBJs\Stormtrooper.obj
+StormOutput			..\Data\Scenes\Stormtrooper.scene
+SylvanasInput 		..\..\Static_Data\OBJs\Sylvanas.obj
+SylvanasOutput 		..\..\Static_Data\Scenes\Sylvanas.pc.scene
+TieInput			..\Data\OBJs\TIE.obj
+TieOutput			..\Data\Scenes\TIE.scene
+WaterInput 	..\..\Static_Data\OBJs\Water.obj
+WaterOutput 	..\..\Static_Data\Scenes\Water.scene
+
+NodeInput			..\Data\PathingNodes\Pathing.47.66.nav
+SpawnInput			..\Data\PathingNodes\SpawnPoints.14.0.nav
+
+CameraRotateSpeed .005
+CameraMoveSpeed 10
+InitialCameraPosition "0.0 21.0 -3.0"
+InitialCameraDirection "0.0 0.0 1.0"
+
+OutputColor random
+OutputTexture "0.0 0.0"
+OutputNormal "1.0 0.0 1.0"

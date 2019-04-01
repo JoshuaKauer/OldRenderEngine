@@ -1,0 +1,22 @@
+﻿Build started 5/17/2016 11:17:05 PM.
+     1>Project "C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\ObjConverter\ObjConverter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\..\MiddleWare\Qt\include" /I"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\..\MiddleWare\glew\include" /I"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\..\MiddleWare\glm" /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Squidley\Logger.cpp BinaryOutput.cpp ConfigReader.cpp Main.cpp ObjParser.cpp
+         ObjParser.cpp
+         Main.cpp
+         ConfigReader.cpp
+         BinaryOutput.cpp
+         Logger.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\Debug\ObjConverter.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\..\Middleware\Qt\lib" /LIBPATH:"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\..\Middleware\glew\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\Debug\ObjConverter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\Debug\ObjConverter.lib" /MACHINE:X86 Debug\Logger.obj
+         Debug\BinaryOutput.obj
+         Debug\ConfigReader.obj
+         Debug\Main.obj
+         Debug\ObjParser.obj
+         ObjConverter.vcxproj -> C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\Debug\ObjConverter.exe
+     1>Done Building Project "C:\School\Quarter 7\sp16_cg_jkauer\Lab06 - Dynamic Environment Refraction\ObjConverter\ObjConverter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.61
