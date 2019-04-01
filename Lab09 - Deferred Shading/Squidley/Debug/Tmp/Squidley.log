@@ -44,8 +44,6 @@
   MyGlWindow_moc.cpp
   MyWidget.cpp
   MyWidget_moc.cpp
-c:\school\quarter 7\sp16_cg_jkauer\lab09 - deferred shading\squidley\mygame.cpp(512): warning C4459: declaration of 'model' hides global declaration
-  c:\school\quarter 7\sp16_cg_jkauer\lab09 - deferred shading\squidley\mygame.cpp(90): note: see declaration of 'model'
   ListNode.cpp
   NodeMap.cpp
   PathFinding.cpp
@@ -60,5 +58,46 @@ c:\school\quarter 7\sp16_cg_jkauer\lab09 - deferred shading\squidley\mygame.cpp(
   TextureInfo.cpp
   TransformInfo.cpp
   VertexShaderInfo.cpp
-  Squidley.vcxproj -> C:\School\Quarter 7\sp16_cg_jkauer\Lab09 - Deferred Shading\Debug\Squidley.exe
-  Squidley.vcxproj -> C:\School\Quarter 7\sp16_cg_jkauer\Lab09 - Deferred Shading\Debug\Squidley.pdb (Full PDB)
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2888): warning C4244: '=': conversion from 'const int' to 'char', possible loss of data (compiling source file Nodes\NodeMap.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2902): note: see reference to function template instantiation 'void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ] (compiling source file Nodes\NodeMap.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2910): note: see reference to function template instantiation 'void std::_Fill_unchecked<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _Iter=char *,
+              _Ty=int,
+              _FwdIt=char *
+          ] (compiling source file Nodes\NodeMap.cpp)
+  e:\oldengine\lab09 - deferred shading\squidley\nodes\nodemap.cpp(23): note: see reference to function template instantiation 'void std::fill<char*,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ]
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2888): warning C4244: '=': conversion from 'const int' to 'char', possible loss of data (compiling source file Reader.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2902): note: see reference to function template instantiation 'void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ] (compiling source file Reader.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2910): note: see reference to function template instantiation 'void std::_Fill_unchecked<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _Iter=char *,
+              _Ty=int,
+              _FwdIt=char *
+          ] (compiling source file Reader.cpp)
+  e:\oldengine\lab09 - deferred shading\squidley\reader.cpp(18): note: see reference to function template instantiation 'void std::fill<char*,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ]
+e:\oldengine\lab09 - deferred shading\squidley\mygame.cpp(512): warning C4459: declaration of 'model' hides global declaration
+  e:\oldengine\lab09 - deferred shading\squidley\mygame.cpp(90): note: see declaration of 'model'
+  Squidley.vcxproj -> E:\OldEngine\Lab09 - Deferred Shading\Debug\Squidley.exe

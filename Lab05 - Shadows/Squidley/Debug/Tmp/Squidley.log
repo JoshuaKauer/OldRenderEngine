@@ -44,7 +44,6 @@
   MyGlWindow_moc.cpp
   MyWidget.cpp
   MyWidget_moc.cpp
-c:\school\quarter 7\sp16_cg_jkauer\lab05 - shadows\squidley\mygame.cpp(231): warning C4189: 'shadowCube': local variable is initialized but not referenced
   ListNode.cpp
   NodeMap.cpp
   PathFinding.cpp
@@ -59,5 +58,45 @@ c:\school\quarter 7\sp16_cg_jkauer\lab05 - shadows\squidley\mygame.cpp(231): war
   TextureInfo.cpp
   TransformInfo.cpp
   VertexShaderInfo.cpp
-  Squidley.vcxproj -> C:\School\Quarter 7\sp16_cg_jkauer\Lab05 - Shadows\Debug\Squidley.exe
-  Squidley.vcxproj -> C:\School\Quarter 7\sp16_cg_jkauer\Lab05 - Shadows\Debug\Squidley.pdb (Full PDB)
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2888): warning C4244: '=': conversion from 'const int' to 'char', possible loss of data (compiling source file Nodes\NodeMap.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2902): note: see reference to function template instantiation 'void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ] (compiling source file Nodes\NodeMap.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2910): note: see reference to function template instantiation 'void std::_Fill_unchecked<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _Iter=char *,
+              _Ty=int,
+              _FwdIt=char *
+          ] (compiling source file Nodes\NodeMap.cpp)
+  e:\oldengine\lab05 - shadows\squidley\nodes\nodemap.cpp(23): note: see reference to function template instantiation 'void std::fill<char*,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ]
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2888): warning C4244: '=': conversion from 'const int' to 'char', possible loss of data (compiling source file Reader.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2902): note: see reference to function template instantiation 'void std::_Fill_unchecked1<_FwdIt,_Ty>(_FwdIt,_FwdIt,const _Ty &,std::false_type)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ] (compiling source file Reader.cpp)
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.12.25827\include\xutility(2910): note: see reference to function template instantiation 'void std::_Fill_unchecked<_Iter,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _Iter=char *,
+              _Ty=int,
+              _FwdIt=char *
+          ] (compiling source file Reader.cpp)
+  e:\oldengine\lab05 - shadows\squidley\reader.cpp(18): note: see reference to function template instantiation 'void std::fill<char*,int>(_FwdIt,_FwdIt,const _Ty &)' being compiled
+          with
+          [
+              _FwdIt=char *,
+              _Ty=int
+          ]
+e:\oldengine\lab05 - shadows\squidley\mygame.cpp(231): warning C4189: 'shadowCube': local variable is initialized but not referenced
+  Squidley.vcxproj -> E:\OldEngine\Lab05 - Shadows\Debug\Squidley.exe
