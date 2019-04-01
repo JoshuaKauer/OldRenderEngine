@@ -3,6 +3,7 @@ This was a Render Engine made during school and was used for school projects. It
 
 ### Binary Alpha
 Alpha transparency, self explanatory
+![Cube with alpha texture](Images/Alpha.png)
 
 ### Explosion
 Using a geometry shader and normals (or calculated normals in my example) I was able to translate the triangles for a model across the normal, creating an explosion like effect.
